@@ -1,0 +1,2 @@
+# WAPAL
+Weighted APAL
