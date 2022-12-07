@@ -9,6 +9,9 @@ class WAPAL:
         self.communities = dict()
         self.community_count = 0
 
+    # The threshold variable stores the "fitness" value.
+    # This method calls it "threshold" because WAPAL is based on APAL
+    # and APAL uses "threshold." 
     def evaluate(self, candidate_community, threshold):
         communities_to_remove = list()
         if self.fitness(candidate_community) < threshold:
@@ -53,7 +56,7 @@ class WAPAL:
         average_of_normalized_weights = w_sum / w_edg # (community_order * (community_order - 1))
         return intraconnectivity * average_of_normalized_weights
 
-    def run_wapal(self, t):
+    def run_wapal(self, f):
         for vertex in self.graph.vertices:
             adjacent_vertices = self.graph.get_adjacency_list(vertex)
             for adjacent_vertex in adjacent_vertices:
@@ -63,5 +66,5 @@ class WAPAL:
                 if len(community_set) != 0:
                     community_set.add(vertex)
                     community_set.add(adjacent_vertex)
-                    self.evaluate(community_set, t)
+                    self.evaluate(community_set, f)
         return [list(x) for x in self.communities.values()]
