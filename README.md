@@ -2,9 +2,9 @@
 
 This is WAPAL by Kaya Oğuz and Osman Doluca, presented at IISEC 2022, International Informatics and Software Engineering Conference. 
 
-Citation information coming soon. Until then, cite as
+The paper is available at https://ieeexplore.ieee.org/document/9998238. Please cite as
 
-Oğuz K, Doluca O, (2022) "Extending APAL to Detect Overlapping Communities in Weighted Networks", Accepted, IISEC 2022 (International Informatics and Software Engineering Conference).
+Oğuz K, Doluca O, (2022) "Extending APAL to Detect Overlapping Communities in Weighted Networks," 2022 3rd International Informatics and Software Engineering Conference (IISEC), 2022, pp. 1-4, doi: 10.1109/IISEC56263.2022.9998238
 
 WAPAL is based on APAL. You can access source code at https://github.com/koguz/APAL/ and the APAL paper at https://www.sciencedirect.com/science/article/abs/pii/S0020025521008318 
 
